@@ -17,9 +17,9 @@ ESP8266WiFiMulti WiFiMulti;
 
 //Constants
 const unsigned long SEND_Timer = 5000;  //Delay between SEND variables, 5000 milliseconds - 5 seconds
-const char* SSIDR = "wifi-name"; //WiFi SSID, change wifi-name by your own
-const char* PASSWORD = "wifi-password"; //WiFi Pass, change wifi-password by your own
-const char* HOST = "http://iotserver1.dis.eafit.edu.co";  // Server on DIS-EAFIT
+const char* SSIDR = "TP-LINK"; //WiFi SSID, change wifi-name by your own
+const char* PASSWORD = "labtel1234"; //WiFi Pass, change wifi-password by your own
+const char* HOST = "server";  // //REST Web Host, replace by real server url
 
 String appName = "/weather";
 String serviceGetTime = "/getTime";
