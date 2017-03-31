@@ -17,8 +17,8 @@ ESP8266WiFiMulti WiFiMulti;
 
 //Constants
 const unsigned long SEND_Timer = 5000;  //Delay between SEND variables, 5000 milliseconds - 5 seconds
-const char* SSIDR = "TP-LINK"; //WiFi SSID, change wifi-name by your own
-const char* PASSWORD = "labtel1234"; //WiFi Pass, change wifi-password by your own
+const char* SSID = "wifi-name"; //WiFi SSID, change wifi-name by your own
+const char* PASSWORD = "wifi-password"; //WiFi Pass, change wifi-password by your own
 const char* HOST = "server";  // //REST Web Host, replace by real server url
 
 String appName = "/weather";
@@ -53,7 +53,7 @@ String webGetTime() {
 
 void setup() {
 
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   for (uint8_t t = 4; t > 0; t--) {
     Serial.printf("[SETUP] WAIT %d...\n", t);
