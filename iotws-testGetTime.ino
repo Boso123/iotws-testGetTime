@@ -19,7 +19,7 @@ ESP8266WiFiMulti WiFiMulti;
 const unsigned long SEND_Timer = 5000;  //Delay between SEND variables, 5000 milliseconds - 5 seconds
 const char* SSID = "wifi-name"; //WiFi SSID, change wifi-name by your own
 const char* PASSWORD = "wifi-password"; //WiFi Pass, change wifi-password by your own
-const char* HOST = "server";  // //REST Web Host, replace by real server url
+const char* HOST = "http://server";  // //REST Web Host, replace by real server url
 
 String appName = "/weather";
 String serviceGetTime = "/getTime";
@@ -61,7 +61,7 @@ void setup() {
     delay(1000);
   }
 
-  WiFiMulti.addAP(SSIDR, PASSWORD);
+  WiFiMulti.addAP(SSID, PASSWORD);
 
 }
 
